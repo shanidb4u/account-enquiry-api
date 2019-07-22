@@ -1,7 +1,7 @@
-#Account Enquiry API
+# Account Enquiry API
 API to retrieve the accounts and transactions.
 
-##Endpoints  
+## Endpoints  
 Following endpoints are supported by this application.    
 1. **GET /accounts**   
     This endpoint is to retrieve the account of a user, userId header should be passed.   
@@ -13,7 +13,7 @@ Following endpoints are supported by this application.
     `curl -X GET "http://localhost:8080/account/123123345/transactions" -H "accept: */*"`
       
 
-##Technologies Used
+## Technologies Used
 ``` 
 SpringBoot,  
 Java8,  
@@ -27,7 +27,7 @@ Swagger,
 Jacoco
   ```   
 
-##Build and Deployment
+## Build and Deployment
 
 run the below command to build and start the application.  
  
@@ -37,7 +37,7 @@ Or Application can be deployed by running the command
 
 ```./gradlew clean build && java -jar build/libs/account-enquiry-0.0.1-SNAPSHOT.jar```
 
-##Testing
+## Testing
 
 This application is using Junit/Mockito for unit testing and RestAssured for API testing.
 Jacoco tool for code coverage.
