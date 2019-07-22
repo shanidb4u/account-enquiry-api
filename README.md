@@ -48,7 +48,7 @@ Run the below command for generating jacoco code coverage report.
 Report is generated at
 /build/reports/jacoco/test/html/index.html
 
-##Other Information
+## Other Information
 
 Swagger is used for API documentation , swagger can be accessed via below url.  
 `http://localhost:8080/swagger-ui.html#/`
