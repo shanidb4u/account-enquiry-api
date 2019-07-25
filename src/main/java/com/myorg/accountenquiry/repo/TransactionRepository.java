@@ -1,4 +1,4 @@
-package com.myorg.accountenquiry.dao.repo;
+package com.myorg.accountenquiry.repo;
 
 import com.myorg.accountenquiry.domain.entity.TransactionEntity;
 import org.springframework.data.repository.CrudRepository;

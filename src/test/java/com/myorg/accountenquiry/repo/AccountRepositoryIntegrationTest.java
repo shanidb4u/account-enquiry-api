@@ -1,6 +1,5 @@
-package com.myorg.accountenquiry.dao;
+package com.myorg.accountenquiry.repo;
 
-import com.myorg.accountenquiry.dao.repo.AccountRepository;
 import com.myorg.accountenquiry.domain.entity.AccountEntity;
 import org.junit.Assert;
 import org.junit.Test;

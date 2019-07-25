@@ -1,8 +1,9 @@
-package com.myorg.accountenquiry.dao.impl;
+package com.myorg.accountenquiry.service.impl;
 
-import com.myorg.accountenquiry.dao.repo.AccountRepository;
 import com.myorg.accountenquiry.domain.Account;
 import com.myorg.accountenquiry.domain.entity.AccountEntity;
+import com.myorg.accountenquiry.repo.AccountRepository;
+import com.myorg.accountenquiry.service.AccountService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,17 +17,17 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class AccountDaoImplTest {
+public class AccountServiceImplTest {
 
-    AccountDaoImpl testInstance;
+    AccountService testInstance;
 
     @Mock
     AccountRepository accountRepository;
 
 
     @Before
-    public void setUp() throws Exception {
-        testInstance = new AccountDaoImpl(accountRepository);
+    public void setUp() {
+        testInstance = new AccountServiceImpl(accountRepository);
     }
 
     @Test

@@ -24,7 +24,7 @@ public class TransactionControllerTest {
 
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         testInstance = new TransactionController(transactionService);
     }
 

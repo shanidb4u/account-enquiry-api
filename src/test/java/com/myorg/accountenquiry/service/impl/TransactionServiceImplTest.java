@@ -1,9 +1,10 @@
-package com.myorg.accountenquiry.dao.impl;
+package com.myorg.accountenquiry.service.impl;
 
-import com.myorg.accountenquiry.dao.repo.TransactionRepository;
 import com.myorg.accountenquiry.domain.Transaction;
 import com.myorg.accountenquiry.domain.entity.AccountEntity;
 import com.myorg.accountenquiry.domain.entity.TransactionEntity;
+import com.myorg.accountenquiry.repo.TransactionRepository;
+import com.myorg.accountenquiry.service.TransactionService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,16 +18,16 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TransactionDaoImplTest {
+public class TransactionServiceImplTest {
 
-    TransactionDaoImpl testInstance;
+    TransactionService testInstance;
 
     @Mock
     TransactionRepository repository;
 
     @Before
-    public void setUp() throws Exception {
-        testInstance = new TransactionDaoImpl(repository);
+    public void setUp() {
+        testInstance = new TransactionServiceImpl(repository);
     }
 
     @Test
